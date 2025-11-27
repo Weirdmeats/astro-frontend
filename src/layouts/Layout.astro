@@ -1,0 +1,24 @@
+---
+import "../styles/global.css"
+import HeaderComponent from "../components/HeaderComponent.astro"
+import FooterComponent from "../components/FooterComponent.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AStro News</title>
+</head>
+<body>
+    <HeaderComponent />
+
+    <main class="flex-grow min-h-screen">
+        <slot />
+    </main>
+
+    <FooterComponent />
+    
+</body>
+</html>
