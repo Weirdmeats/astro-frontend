@@ -1,0 +1,17 @@
+---
+import { ItemRedes } from "../data/ItemsMenu"
+---
+
+    <div class=" flex  gap-10 space-x-5">
+        {ItemRedes.map((item)=>(
+            <div class="items-center justify-items-center justify-center">
+                <h2 class="text-white pb-1 uppercase">{item.texto}</h2>
+                <a href={item.link} class="uppercase text-white font-semibold item">
+                    <img src={item.href} alt={item.texto} class="w-10 h-10"/>
+                </a>
+                  
+
+            </div>
+        ))}
+            
+    </div>
