@@ -3,11 +3,21 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-	<main class=" bg-red-900 pb-0">
-		<div class="py-70">
-			<h1 class="font-semibold text-white text-6xl">
-				Bienvenidos
-			</h1>
+	<main class=" bg-[#dbe0e3] container mx-auto pt-5 px-5 sm:px-5 md:px-10 lg:px-15 xl:px-25">
+		<!--titulo -->
+		<h1 class="text-gray-500 text-center text-5xl font-bold pb-5">Noticias</h1>
+		<div class="grid grid-cols-2">
+			<!--contenido -->
+			<img src="https://www.tvn.cl/tvn/site/artic/20251128/imag/foto_0000004420251128190422/Dictan_prision_preventiva_para_universitario.jpg" alt="" class="w-full h-full rounded-lg">
+
+			<div class="p-10 bg-white rounded-lg">
+				<h3>Fecha de la noticia</h3>
+				
+				<h1>Noticia con titulo</h1>
+
+				<p class="text-3xl">Texto mas extenso de la noticia</p>
+				
+			</div>
 		</div>
 
 	</main>

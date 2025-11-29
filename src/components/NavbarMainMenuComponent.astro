@@ -1,0 +1,10 @@
+---
+import { NavbarMain } from "../data/NavbarMenu";
+---
+
+    <div class="gap-10 space-x-5">
+        {NavbarMain.map((item)=>(
+            <a href={item.href} class="uppercase text-black font-bold">{item.texto}</a>
+        ))}
+            
+    </div>

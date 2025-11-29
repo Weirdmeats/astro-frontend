@@ -1,0 +1,10 @@
+---
+import { NavbarSecc } from "../data/NavbarMenu"
+---
+
+    <div class="gap-10 space-x-5">
+        {NavbarSecc.map((item)=>(
+            <a href={item.href} class="uppercase text-white font-semibold">{item.texto}</a>
+        ))}
+            
+    </div>
