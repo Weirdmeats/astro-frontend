@@ -6,14 +6,14 @@ interface NavbarItems {
 }
 
 export const NavbarMain: NavbarItems[] =[
-    {href:"/", texto: "casting"},
-    {href:"/", texto: "vodcast"},
+    {href:"/", texto: "servicios"},
+    {href:"/", texto: "contacto"},
+    {href:"", texto: "|"},
     {href:"/", texto: "programas"},
     {href:"/", texto: "teleseries"},
-    {href:"/", texto: "ntv"},
     {href:"/", texto: "tv chile"},
     {href:"/", texto: "noticias"},
-    {href:"/", texto: "señales"},
+    {href:"/", texto: "podcasts"},
 ]
 
 //navbar secundario
