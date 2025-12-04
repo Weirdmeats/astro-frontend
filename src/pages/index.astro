@@ -1,26 +1,39 @@
 ---
+
 import TitlesComponent from "../components/TitlesComponent.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout> <!--responsive tailwind extraido de https://tailwindcss.com/docs/responsive-design -->
-	<main class=" bg-[#dbe0e3] container mx-auto pt-5 px-5 sm:px-5 md:px-10 lg:px-15 xl:px-25 sm:text-lg md:text-xl lg:text-2xl">
-		<!--titulo -->
-		<!--titulo drycode -->
-		<TitlesComponent estilo="text-gray-500 text-center text-5xl font-bold pb-5" texto="Noticias" />
-		<div class="grid grid-cols-2 md:grid:cols-2">
-			<!--contenido -->
-			<img src="https://www.tvn.cl/tvn/site/artic/20251128/imag/foto_0000004420251128190422/Dictan_prision_preventiva_para_universitario.jpg" alt="" class="w-full h-full rounded-lg">
-
-			<div class="p-10 bg-[#e2ebee] rounded-lg">
-				<h3>Fecha de la noticia</h3>
-				
-				<h1>Noticia con titulo</h1>
-
-				<p class="text-3xl">Texto mas extenso de la noticia</p>
-				
-			</div>
+<Layout>
+	<main class=" w-full gap-10">
+		<div style="background-image: url('https://cromamedia.com/wp-content/uploads/2021/04/experts_wordpress-1.jpg') ;" class="w-full h-[300px] ">
+		<div class="justify-items-center items-center justify-center">
+			<h1 class="font-bold text-6xl text-center text-white ">Noticias Tecnologicas Internacionales</h1>
+			<h2 class="font-semibold text-3xl text-white ">Mantente al dia con las ultimas novedades en informatica, inteligencia artificial, hardware, software y ciberseguridad de todo el mundo</h2>
 		</div>
+
+		</div>
+	
+		
+			
+		</div>
+		<div class="w-full">
+			<div class="grid grid-cols-2">
+				<div class="container mx-auto p-3">
+					<img src="https://www.diarioconstitucional.cl/wp-content/uploads/2024/11/image1170x530cropped-4.jpg" alt="" class="w-full h-[300px] rounded-lg">
+				</div>
+
+				<div class=" container mx-auto p-3 text-center">
+					<TitlesComponent estilo="text-black underline" texto="Ultimas noticias">
+					
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	
 
 	</main>
 	

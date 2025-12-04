@@ -1,0 +1,9 @@
+---
+interface Props {
+    texto: string;
+    estilo: string
+}
+
+const {texto, estilo} = Astro.props
+---
+<p class={`text-lg ${estilo}`}>{texto}</p>

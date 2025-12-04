@@ -6,22 +6,13 @@ interface NavbarItems {
 }
 
 export const NavbarMain: NavbarItems[] =[
-    {href:"/", texto: "servicios"},
-    {href:"/", texto: "contacto"},
-    {href:"", texto: "|"},
-    {href:"/", texto: "programas"},
-    {href:"/", texto: "teleseries"},
-    {href:"/", texto: "tv chile"},
-    {href:"/", texto: "noticias"},
-    {href:"/", texto: "podcasts"},
-]
-
-//navbar secundario
-export const NavbarSecc: NavbarItems[] =[
-    {href:"/", texto: "corporativo y transparencia"},
-    {href:"/", texto: "canal de denuncias"},
-    {href:"/", texto: "areas de proyectos"},
-  
+    {href:"/", texto: "Inicio"},
+    {href:"/", texto: "Hardware"},
+    {href:"/", texto: "Software"},
+    {href:"/", texto: "Ia"},
+    {href:"/", texto: "Ciberseguridad"},
+    {href:"/", texto: "Gadgets"},
+    {href:"/", texto: "Contacto"},
 ]
 
   
