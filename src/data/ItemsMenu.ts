@@ -7,12 +7,12 @@ interface NavbarItems {
 
 export const NavbarMain: NavbarItems[] =[
     {href:"/", texto: "Inicio"},
-    {href:"/", texto: "Hardware"},
-    {href:"/", texto: "Software"},
-    {href:"/", texto: "Ia"},
-    {href:"/", texto: "Ciberseguridad"},
-    {href:"/", texto: "Gadgets"},
-    {href:"/", texto: "Contacto"},
+    {href:"/", texto: "Hardware"}, //paginas dinamicas con slug
+    {href:"/", texto: "Software"}, //paginas dinamicas con slug
+    {href:"/ia", texto: "Ia"},
+    {href:"/ciberseguridad", texto: "Ciberseguridad"},
+    {href:"/gadgets", texto: "Gadgets"},
+    {href:"/contacto", texto: "Contacto"},
 ]
 
   

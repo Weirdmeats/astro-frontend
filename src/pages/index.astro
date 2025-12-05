@@ -1,15 +1,17 @@
 ---
 
+import ParrafoComponent from "../components/ParrafoComponent.astro"
 import TitlesComponent from "../components/TitlesComponent.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
 	<main class=" w-full gap-10">
-		<div style="background-image: url('https://cromamedia.com/wp-content/uploads/2021/04/experts_wordpress-1.jpg') ;" class="w-full h-[300px] ">
-		<div class="justify-items-center items-center justify-center">
+		<div style="background-image: url('https://cromamedia.com/wp-content/uploads/2021/04/experts_wordpress-1.jpg') ;" class="w-full h-[300px] bg-cover bg-black/50 bg-blend-multiply">
+			<!--ocupe blend multiply, extraido de tutorial-->
+		<div class="justify-items-center items-center justify-center pt-18">
 			<h1 class="font-bold text-6xl text-center text-white ">Noticias Tecnologicas Internacionales</h1>
-			<h2 class="font-semibold text-3xl text-white ">Mantente al dia con las ultimas novedades en informatica, inteligencia artificial, hardware, software y ciberseguridad de todo el mundo</h2>
+			<h2 class="font-semibold text-3xl text-white text-center">Mantente al dia con las ultimas novedades en informatica, inteligencia artificial, hardware, software y ciberseguridad de todo el mundo</h2>
 		</div>
 
 		</div>
@@ -18,13 +20,17 @@ import Layout from "../layouts/Layout.astro"
 			
 		</div>
 		<div class="w-full">
-			<div class="grid grid-cols-2">
-				<div class="container mx-auto p-3">
+			<div class="grid grid-cols-2 w-full">
+				<div class="mx-auto p-3">
 					<img src="https://www.diarioconstitucional.cl/wp-content/uploads/2024/11/image1170x530cropped-4.jpg" alt="" class="w-full h-[300px] rounded-lg">
 				</div>
 
-				<div class=" container mx-auto p-3 text-center">
-					<TitlesComponent estilo="text-black underline" texto="Ultimas noticias">
+				<div class=" mx-auto p-3 text-center gap-10 space-y-5">
+					<TitlesComponent estilo="text-black underline" texto="Ultimas noticias"/>
+					<ParrafoComponent estilo="" texto="Contenido dinamico" />
+					<ParrafoComponent estilo="" texto="Contenido dinamico" />
+					<ParrafoComponent estilo="" texto="Contenido dinamico" />
+
 					
 
 				</div>
