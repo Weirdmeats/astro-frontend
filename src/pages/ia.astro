@@ -1,12 +1,47 @@
 ---
+import ParrafoComponent from "../components/ParrafoComponent.astro"
+import TitleH1Component from "../components/TitleH1Component.astro"
+import TitleH2Component from "../components/TitleH2Component.astro"
+import TitleH3Component from "../components/TitleH3Component.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    <main>
-        <div>
-            <h1 class="text-7xl">ia</h1>
+    <main class="w-full">
+        <div class="w-full">
+        <div style="background-image: url('https://www.seoenmexico.com/wp-content/uploads/2024/04/ia.jpg') ;" class="w-full h-[300px] bg-cover bg-black/70 bg-blend-multiply">
+			<div class="justify-items-center items-center justify-center pt-18 p-40 space-y-5">
+                <TitleH1Component estilo="font-bold text-6xl text-center text-white" texto="Inteligencia Artificial" />
+                <TitleH2Component estilo="font-semibold text-3xl text-white text-center" texto="Daremos a conocer diferentes usos, tipos y complementos de la inteligencia artificial" />
+
+			</div>
+
+		</div>
+	
         </div>
+
+       <div class="w-full bg-linear-to-r from-blue-400 to-blue-500 text-white">
+               <div class="grid grid-cols-2">
+                <div class="bg-linear-to-r from-blue-600 to-gray-700 p-10 gap-2 space-y-4">
+
+                    <TitleH2Component estilo="text-center font-semibold" texto="¿Que es la IA o inteligencia artificial?" />
+                    <ParrafoComponent estilo="" texto="Es un area dentro de la informatica que se basa en desarrollar sistemas con la posibilidad de constituir y realizar tareas que usualmente realiza el humano, esto puede ser como por ejemplo aprender, resolver problemas basicos, resolver problemas dificiles," />
+                    <img src="https://winblog.s3.amazonaws.com/blog/wp-content/uploads/2023/06/app-de-ia-para-mejorar-chatgpt.jpeg" alt="" class="items-center h-70 w-full border rounded">
+
+                </div>
+
+                <div class="bg-linear-to-r from-gray-700 to-blue-600 p-10 gap-2 space-y-4">
+
+                    <TitleH2Component estilo="text-center font-semibold" texto="¿Tiene mas usos?" />
+                    <ParrafoComponent estilo="" texto="Es un area dentro de la informatica que se basa en desarrollar sistemas con la posibilidad de constituir y realizar tareas que usualmente realiza el humano, esto puede ser como por ejemplo aprender, resolver problemas basicos, resolver problemas dificiles," />
+                    <img src="https://winblog.s3.amazonaws.com/blog/wp-content/uploads/2023/06/app-de-ia-para-mejorar-chatgpt.jpeg" alt="" class="items-center h-70 w-full border rounded">
+
+                </div>
+
+
+
+               </div>
+            </div>
     </main>
     
 </Layout>

@@ -2,9 +2,9 @@
 import { NavFooter } from "../data/ItemsMenu"
 ---
 
-    <div class="gap-10 space-x-5 px-5 p-5">
+    <div class="gap-10 space-x-5 px-5 p-5 items-center">
         {NavFooter.map((item)=>(
-            <a href={item.href} class="uppercase text-slate-500 font-bold text-sm">{item.texto}</a>
+            <li><a href={item.href} class=" text-gray-300 text-lg space-x-5">{item.texto}</a></li>
         ))}
             
     </div>

@@ -1,26 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import ParrafoComponent from "./ParrafoComponent.astro"
+import TitleH1Component from "./TitleH1Component.astro"
+interface ItemsProduct {
+    
+}
 ---
 
 <Layout>
 
     <!--cards -->
-    <div class="container mx-auto pb-2 m-2">
-        <!--imagen -->
-        <div>
-            <img src="https://www.tvn.cl/tvn/site/artic/20251130/imag/foto_0000000520251130092902/Ironman_natacion.png" alt=""/>
+    <div class="w-full mx-auto pb-2 m-2">
+        <div class="flex flex-col text-center h-[450px] justify-center p-2">
+            <TitleH1Component estilo="text-xl font-semibold bg-slate-600" texto="Producto"/>
+            <div class="w-75 h-75">
+                <!--imagen -->
+                <img src="" alt="" class="w-full h-full">
+            </div>
+            <ParrafoComponent texto="Noticia texto" estilo="text-lg text-white" />
+
         </div>
-        <!--desc noticia -->
-        <div>
-            <p>TextoTextoTextoTextoTextoTextoTexto</p>
-        </div>
-
-        <!--link para ir al detail slug -->
-        <button class="">
-            <a href="">Detalles</a>
-
-        </button>
-
+       
         
     </div>
     

@@ -1,39 +1,49 @@
 ---
 import NavFooterComponent from "./NavFooterComponent.astro";
+import ParrafoComponent from "./ParrafoComponent.astro";
 import SocialNetworksComponent from "./SocialNetworksComponent.astro";
+import TitlesComponent from "./TitleH1Component.astro";
+import TitleH2Component from "./TitleH2Component.astro";
 ---
 
 <footer class="bg-[#4a5472] justify-center items-center justify-items-center">
-    <!--primer tramo -->
-    <div class="w-full bg-[#e2ebee] gap-10 space-x-5 px-10 justify-center flex items-center">
-        <!--logo -->
-        <img src="https://www.tvn.cl/tvn/site/artic/20220922/imag/foto_0000000120220922180533/logo_tvn.png" alt="" class="w-[65px] h-[55px]">
-        <h2 class="uppercase text-lg ">television nacional de chile</h2>
+    <section class="flex flex-col">
+        <div class="bg-blue-950 w-full flex flex-col p-10 text-center items-center space-y-2">
 
-    </div>
-    <!--2do tramo -->
-    <div class="w-full bg-[#e2ebee] py-10 flex items-center gap-10">
-        <!--navfooter     -->
-        <NavFooterComponent />
-        <h3 class="text-gray-500">©2025 TELEVISIÓN NACIONAL DE CHILE. TODOS LOS DERECHOS RESERVADOS</h3>
+            <TitlesComponent texto="Subscribite a nuestro boletin" estilo="text-2xl text-white"/>
+
+            <ParrafoComponent texto="Ingresa tu correo electronico para poder recibir nuestras noticias y encuentas, cada semana sorteamos una revista limitada" estilo="text-white"/>
+
+                <input type="email" class="bg-white rounded-lg items-center w-60 p-2" placeholder="Tu correo electronico"> 
+               
+                <button class="text-white focus-within: bg-slate-400 p-0.5 w-20 items-center rounded-sm cursor-pointer">
+                    <a href="/">Subcribite</a>
+                </button>
 
 
-    </div>
-    <!--3er tramo -->
-    <div class="container mx-auto py-10 justify-center justify-items-center">
-        <div class="grid grid-cols-2">
-            <!--copyright -->
-            <div class="container px-10">
-                <h2 class="text-white text-lg font-bold">Derechos reservados 2025</h2>
-                <p class="text-base text-white">TVN es un canal de noticias, nuestro funcionamiento como sitio web es crear un vinculo para llegar a mas personas en la era digital</p>
-            </div>
-            <!--links -->
-            <div class="container">
-                <SocialNetworksComponent />
-            </div>
+
         </div>
-    
-    </div>
 
+        <div class="bg-gray-400 w-full grid grid-cols-3 p-5 px-20 gap-10 justify-center justify-items-center">
 
+            <ul class="text-white space-y-2 border-t">
+                <TitleH2Component estilo="text-center text-xl font-bold" texto="Tue Tech"/>
+                <ParrafoComponent estilo="text-gray-300 text-base" texto="Somos una confiable fuente de informacion, entregamos noticias informaticas de forma internacional, abarcamos las ultimas tendencias tecnologicas, hardware, software, ciberseguridad y por ultimo y mas importante IA."/>
+                
+            </ul>
+             <ul class="text-gray-300 border-t">
+                <TitleH2Component estilo="font-bold text-xl text-center text-white" texto="Categorias"/>
+                <NavFooterComponent />
+            </ul>
+             <ul class="text-gray-300 border-t">
+                <TitleH2Component estilo="font-bold text-xl text-center text-white" texto="Contacto"/>
+                <li class=""><a href="">Calle avenida foreverlive 321, Pensilvina, tortella</a></li>
+                <li class=""><a href="">+84 928 490 000</a></li>
+                <li class=""><a href="">info@2tech.com</a></li>
+                <li class=""><a href="">www.tuetech.com</a></li>
+            </ul>
+           
+        </div>
+         <div class="justify-center text-center flex bg-slate-500"><SocialNetworksComponent /></div>
+    </section>
 </footer>

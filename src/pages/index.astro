@@ -1,7 +1,8 @@
 ---
 
 import ParrafoComponent from "../components/ParrafoComponent.astro"
-import TitlesComponent from "../components/TitlesComponent.astro"
+import TitleH1Component from "../components/TitleH1Component.astro"
+import TitleH2Component from "../components/TitleH2Component.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
@@ -9,37 +10,38 @@ import Layout from "../layouts/Layout.astro"
 	<main class=" w-full gap-10">
 		<div style="background-image: url('https://cromamedia.com/wp-content/uploads/2021/04/experts_wordpress-1.jpg') ;" class="w-full h-[300px] bg-cover bg-black/50 bg-blend-multiply">
 			<!--ocupe blend multiply, extraido de tutorial-->
-		<div class="justify-items-center items-center justify-center pt-18">
-			<h1 class="font-bold text-6xl text-center text-white ">Noticias Tecnologicas Internacionales</h1>
-			<h2 class="font-semibold text-3xl text-white text-center">Mantente al dia con las ultimas novedades en informatica, inteligencia artificial, hardware, software y ciberseguridad de todo el mundo</h2>
-		</div>
+			<div class="justify-items-center items-center justify-center pt-18 p-15">
+				<TitleH1Component estilo="font-bold text-6xl text-center text-white" texto="Noticias Tecnologicas Internacionales" />
+				<TitleH1Component estilo="font-semibold text-3xl text-white text-center" texto="Para mantenerte al dia revisa nuestra pagina completa, asi estaras al tanto de novedades en la informatica en general" />
+			</div>
 
 		</div>
 	
-		
-			
 		</div>
 		<div class="w-full">
-			<div class="grid grid-cols-2 w-full">
+			<div class="grid grid-cols-2 w-full p-3 px-10">
 				<div class="mx-auto p-3">
 					<img src="https://www.diarioconstitucional.cl/wp-content/uploads/2024/11/image1170x530cropped-4.jpg" alt="" class="w-full h-[300px] rounded-lg">
+
+					<div class="bg-red-300 w-full mt-4">
+						<TitleH2Component texto="OpenAI desvela la nueva version GPT, CHATGPT-5: Segun su declaracion tiene una 	capacidad muy superior al pensamiento humano en las mismas tareas" estilo="text-2xl font-semibold" />
+						<ParrafoComponent texto="Es logico decir que la tecnologia va progresando a pasos agigantados, pero el modelo de 	lenguaje de OpenAi esta mostrando avances nunca antes vistos, ya que, tiene una prediccion muy buena y gran funcionamiento" estilo="text-black" />
 				</div>
 
+				</div>
+
+
 				<div class=" mx-auto p-3 text-center gap-10 space-y-5">
-					<TitlesComponent estilo="text-black underline" texto="Ultimas noticias"/>
+					<TitleH2Component estilo="text-black underline" texto="Ultimas noticias"/>
 					<ParrafoComponent estilo="" texto="Contenido dinamico" />
 					<ParrafoComponent estilo="" texto="Contenido dinamico" />
 					<ParrafoComponent estilo="" texto="Contenido dinamico" />
-
-					
-
+			
 				</div>
 
 			</div>
 
 		</div>
-		
-	
 
 	</main>
 	

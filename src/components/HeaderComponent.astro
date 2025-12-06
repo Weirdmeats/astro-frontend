@@ -1,15 +1,17 @@
 ---
 import NavbarMainMenuComponent from "./NavbarMainMenuComponent.astro"
+import TitleH1Component from "./TitleH1Component.astro"
 
 ---
 
-<header class="bg-linear-to-r from-white to-blue-500 text-white"> 
+<header class="bg-linear-to-r from-white to-blue-500 text-white fixed w-full"> 
     <div class="justify-between items-center flex px-4">
     <!--logo -->
         
         <div class="flex items-center px-35">
-            <h1 class="text-black text-3xl font-semibold">Tue Tech</h1>
+            <TitleH1Component texto="Tue Tech" estilo="text-black text-3xl font-semibold"/>
             <img src="/favicon.svg" alt="logo" class="w-[120px] h-[50px]">
+
         </div>
 
         <!--segundo nav -->

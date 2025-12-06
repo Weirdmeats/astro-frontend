@@ -21,12 +21,12 @@ export const ItemRedes: NavbarItems[] = [
     {
         href: "https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png", 
         texto: "Facebook", 
-        link: "https://www.facebook.com/tvn.cl/?locale=es_LA"
+        link: "https://www.facebook.com/TECHUniversidad/"
     },
     {
         href: "https://cdn-icons-png.flaticon.com/512/3983/3983858.png", 
         texto: "Instagram", 
-        link: "https://www.instagram.com/tvchile_tvn/"
+        link: "https://www.instagram.com/tech/"
     },
     {
         href: "https://cdn-icons-png.flaticon.com/256/3536/3536445.png", 
@@ -36,9 +36,9 @@ export const ItemRedes: NavbarItems[] = [
 ]
 
 export const NavFooter: NavbarItems[]=[
-    {href:"/", texto: "comercial"},
-    {href:"/", texto: "concursos"},
-    {href:"/", texto: "tv tiempo"},
-    {href:"/", texto: "politicas de privacidad"},
-    {href:"/", texto: "trabaja con nosotros"},
+    {href:"/", texto: "Hardware"}, //contenido dinamico
+    {href:"/", texto: "Software"}, //contenido dinamico
+    {href:"/ia", texto: "Inteligencia Artificial"},
+    {href:"/ciberseguridad", texto: "Ciberseguridad"},
+    {href:"/gadgets", texto: "Gadgets"},
 ]

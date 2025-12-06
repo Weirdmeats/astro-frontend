@@ -1,11 +1,58 @@
 ---
+import SocialNetworksComponent from "../components/SocialNetworksComponent.astro"
+import TitleH1Component from "../components/TitleH1Component.astro"
+import TitleH2Component from "../components/TitleH2Component.astro"
+import TitleH3Component from "../components/TitleH3Component.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    <main>
-        <div>
-            <h1 class="text-7xl">contacto</h1>
+    <main class="w-full">
+        <div class="w-full">
+            <div style="background-image: url('https://cdn0.uncomo.com/es/posts/0/8/7/como_encontrar_las_mejores_formas_de_contacto_de_las_empresas_50780_600.jpg') ;" class="bg-center w-full h-[300px] bg-cover bg-black/50 bg-blend-multiply">
+			    <div class="justify-items-center items-center justify-center pt-18 p-40">
+                    <TitleH1Component estilo="font-bold text-6xl text-center text-white" texto="CONTACTO" />
+                    <TitleH2Component estilo="font-semibold text-3xl text-white text-center" texto="Habla, comenta y chatea con nosotros a traves de nuestro sistema de correos electronicos" />
+
+			
+			    </div>
+
+		    </div>
+
+            <section class="w-full bg-linear-to-l from-blue-400 to-blue-900 p-5 uppercase">
+                <form class="container mx-auto p-5  space-y-10">
+                    <TitleH2Component estilo="text-center font-semibold text-4xl text-slate-50" texto="Ingresa tus datos para contactar con nosotros" />
+ 
+                    <div class="grid grid-cols-2">
+                        <div class="items-center flex flex-col gap-1 p-1 text-white">
+                            <TitleH3Component estilo="font-semibold" texto="Nombre" />
+                                <input type="text" placeholder="Ingresa tu nombre" class="bg-white rounded w-70 p-0.5 px-2 text-black">
+                            <TitleH3Component estilo="font-semibold" texto="Apellido" />
+                            
+                                <input type="text" placeholder="Ingresa tu apellido" class="bg-white rounded w-70 p-0.5 px-2 text-black">
+                            <TitleH3Component estilo="font-semibold" texto="Correo Electronico" />
+                
+                                <input type="email" placeholder="Ingresa tu correo electronico" class="bg-white rounded w-70 p-0.5 px-2 text-black"/>
+
+                            <TitleH3Component estilo="font-semibold" texto="Ingresa tu mensaje" />  
+
+                            <textarea name="" id="" class="bg-white w-70 rounded h-20 text-black" placeholder="Ingresa tu mensaje"></textarea>
+                            <br>
+                            <button class="cursor-pointer bg-gray-500 p-2 text-white"> <a href="">Enviar</a></button>
+                        </div>
+                        <div class="p-10 text-center justify-items-center items-center">
+                            <TitleH3Component estilo="font-semibold text-xl text-white py-5" texto="Accede a nuestras redes sociales para estar al tanto" />
+                            <div class=" justify-items-center justify-center items-center flex">
+                                <SocialNetworksComponent />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+            </section>
+	
         </div>
     </main>
     

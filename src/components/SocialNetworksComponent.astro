@@ -1,13 +1,14 @@
 ---
 import { ItemRedes } from "../data/ItemsMenu"
+import TitleH2Component from "./TitleH2Component.astro"
 ---
 
-    <div class=" flex  gap-10 space-x-5">
+    <div class=" flex  gap-10 space-x-5 items-center">
         {ItemRedes.map((item)=>(
             <div class="items-center justify-items-center justify-center">
-                <h2 class="text-white pb-1 uppercase">{item.texto}</h2>
-                <a href={item.link} class="uppercase text-white font-semibold item">
-                    <img src={item.href} alt={item.texto} class="w-10 h-10"/>
+                <TitleH2Component estilo="text-gray-300 pb-1" texto={item.texto}/>
+                <a href={item.link} class="text-gray-300 font-semibold">
+                    <img src={item.href} alt={item.texto} class="w-8 h-8 text-gray-300"/>
                 </a>
                   
 

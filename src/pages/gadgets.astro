@@ -1,11 +1,59 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import TitleH1Component from "../components/TitleH1Component.astro"
+import TitleH2Component from "../components/TitleH2Component.astro"
+import TitleH3Component from "../components/TitleH3Component.astro"
+import ParrafoComponent from "../components/ParrafoComponent.astro"
+
 ---
 
 <Layout>
-    <main>
-        <div>
-            <h1 class="text-7xl">gadgets</h1>
+    <main class="w-full">
+        <div class="w-full">
+            <div style="background-image: url('https://media.licdn.com/dms/image/v2/D4D12AQFu2p--ehtXfw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1705580387858?e=2147483647&v=beta&t=TwIBv2g9LAES46L3cRHLU9zW_GYB6l0U93w_50gfi-E') ;" class="bg-center w-full h-[300px] bg-cover bg-black/50 bg-blend-multiply">
+			    <div class="justify-items-center items-center justify-center pt-18 p-40">
+                    <TitleH1Component estilo="font-bold text-6xl text-center text-white" texto="Gadgets" />
+                    <TitleH2Component estilo="font-semibold text-3xl text-white text-center" texto="Accesorios o gadgets, manteniendolos informados con respecto a la novedad del mundo informatico y ultimamente con la inteligencia artificial" />
+
+                </div>
+
+		    </div>
+
+            <div class="w-full bg-linear-to-r from-blue-400 to-blue-500">
+                <div class="p-5">
+                     <TitleH2Component estilo="font-semibold text-3xl text-white text-center" texto="Existen una variedad de accesorios tanto informaticos como de IA" />
+                </div>
+                <div class="bg-linear-to-r from-blue-400 to-cyan-500">
+            <div class="items-center ">
+                <div class="grid grid-cols-3 place-items-center p-10 w-full gap-10">
+                    <div class="w-[300px] h-[350px] bg-white p-1 text-center items-center px-3">
+                        <TitleH3Component estilo="py-2 text-black" texto="Reloj IA "/>
+                        <img src="https://i.blogs.es/32a349/venu/650_1200.jpg" alt="" class="w-full h-50 rounded">
+                    <ParrafoComponent estilo="text-black p-1 rounded bg-gray-200" texto="Este reloj contiene implementacion de inteligencia artificial" />
+                    </div>
+
+
+                    <div class="w-[300px] h-[350px] bg-white p-1 text-center px-3">
+                        <TitleH3Component estilo="py-2 text-black" texto="Accesorios informaticos"/>
+                        <img src="https://tecnologia-informatica.com/wp-content/uploads/2018/12/que-son-los-gadgets-2.jpeg" alt="" class="w-full h-50 rounded">
+                    <ParrafoComponent estilo="text-black p-1 rounded bg-gray-200" texto="Este reloj contiene implementacion de inteligencia artificial" />        
+                    </div>
+
+                    <div class="w-[300px] h-[350px] bg-white p-1 text-center px-3">
+                        <TitleH3Component estilo="py-2 text-black" texto="Software IA"/>
+                        <img src="https://gsdcdata.s3.amazonaws.com/gsdc/image/top-8-generative-ai-tools-for-software-development.jpg" alt="" class="w-full h-50 rounded">
+                    <ParrafoComponent estilo="text-black p-1 rounded bg-gray-200" texto="Este reloj contiene implementacion de inteligencia artificial" />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+            </div>
+               
+	
         </div>
     </main>
     
